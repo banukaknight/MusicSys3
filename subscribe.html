@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Subscribe</title>
+  <meta charset="utf-8">
+    <link rel="icon" href="./src/bk.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js">
+    < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" >
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: powderblue;
+      background-image: url("./src/bg/bg1.jpg");
+      color: black;
+    }
+
+    p {
+      color: green;
+    }
+
+    a {
+      font-size: 1em;
+    }
+
+    h2,
+    h4 {
+      color: navy;
+    }
+
+    label {
+      display: inline-block;
+      width: 10em;
+      text-align: right;
+    }
+
+    .tab-pane {
+      background-color: rgb(256, 265, 265, 0.6);
+      padding: 1em;
+      border-radius: 25px;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      padding-left: 1em;
+    }
+
+    @media screen and (max-width: 600px) {
+      .mynav {
+        display: none;
+      }
+    }
+
+    input,
+    select,
+    textarea {
+
+      border: 1px solid #ebebeb;
+      padding: 5px 10px;
+      box-shadow: 0 0 10px #12AADD;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #9ecaed;
+      box-shadow: 0 0 20px #991191;
+    }
+
+    /* css for typehead dropdown --- start*/
+    .tt-query {
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    }
+
+    .tt-hint {
+      color: #999
+    }
+
+    .tt-menu {
+      /* used to be tt-dropdown-menu in older versions */
+      min-width: 170px;
+      margin-top: 4px;
+      padding: 4px 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+      -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .tt-suggestion {
+      padding: 3px 20px;
+      line-height: 24px;
+    }
+
+    .tt-suggestion.tt-cursor,
+    .tt-suggestion:hover {
+      color: #fff;
+      background-color: #0097cf;
+    }
+
+    .tt-suggestion p {
+      margin: 0;
+    }
+
+    /* css for typehead dropdown --- end*/
+  </style>
+</head>
+
+<body>
+  <ul class="breadcrumb" style="margin-bottom: 0">
+    <li><a href="./index.html">Home</a></li>
+    <li>Subscription</li>
+  </ul>
+
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center ">
+
+    <img src="./src/bg/logo.png" style="height:4em; margin-right:2em" />
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href=#><span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=#><span class="glyphicon glyphicon glyphicon-qrcode" aria-hidden="true"></span> ABOUT</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href=# data-toggle="dropdown">BLOG</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Blog 1</a>
+          <a class="dropdown-item" href="#">Blog 2</a>
+        </div>
+      </li>
+
+    </ul>
+    <button type="button" class="btn btn-primary justify-content-end" style="margin-left:2em; margin-right:2em"><span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true">&nbsp</span>CONTACT</button>
+
+    <button type="button" class="btn btn-success" onclick="window.location.href='./index.html'">Go Back</button>
+
+  </nav>
+
+  <h1>Subscribe to monthly magazine</h1>
+  <marquee direction="down" behavior="alternate" height="500" style="position: fixed;  margin:auto; z-index: -2">
+    <marquee behavior="alternate" style="position: fixed; margin:auto;  z-index: -1"><img src="./src/bg/logo.png" height="100px" style="opacity:0.5"></marquee>
+  </marquee>
+
+
+  <form>
+    <table class="table table-hover table-striped " style="opacity:0.9">
+      <tbody>
+        <tr>
+          <td><label for="fname">Name:</label></td>
+          <td><input type="text" id="fname" name="fname" value=""></td>
+        </tr>
+
+
+        <tr>
+          <td><label for="fname">Email:</label></td>
+          <td><input type="text" id="fname" name="fname" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label for="fname">Home Address:</label></td>
+          <td><textarea rows="4" cols="40" placeholder="Address here"></textarea></td>
+        </tr>
+
+        <tr>
+          <td><label for="fname">Contact No:</label></td>
+          <td><input type="text" id="fname" name="fname" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label for="fname">Payment Method:</label></td>
+          <td>
+            <div id="the-basics">
+              <input class="typeahead" type="text" placeholder="(typeahead pay-M)">
+            </div>
+
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" class="btn btn-info" id="fname" name="f_submit" value="Proceed to Payment portal"></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </form>
+
+  <script>
+    var substringMatcher = function(strs) {
+      return function findMatches(q, cb) {
+        var matches, substringRegex;
+
+        // an array that will be populated with substring matches
+        matches = [];
+
+        // regex used to determine if a string contains the substring `q`
+        substrRegex = new RegExp(q, 'i');
+
+        // iterate through the pool of strings and for any string that
+        // contains the substring `q`, add it to the `matches` array
+        $.each(strs, function(i, str) {
+          if (substrRegex.test(str)) {
+            matches.push(str);
+          }
+        });
+
+        cb(matches);
+      };
+    };
+
+    var paym = ['paytm', 'Google pay', 'debit card', 'credit card', 'charge card', 'prepaid card', 'direct debit', 'bank transfer', 'digital wallet', 'mobile payment', 'check', 'money order', 'cash payments'];
+
+    $('#the-basics .typeahead').typeahead({
+      hint: true,
+      highlight: true,
+      minLength: 1
+    }, {
+      name: 'paym',
+      source: substringMatcher(paym)
+    });
+  </script>
+</body>
+
+</html>
