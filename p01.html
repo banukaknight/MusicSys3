@@ -2,491 +2,492 @@
 <html>
 
 <head>
-    <title>Taylor Swift</title>
-    <meta charset="utf-8">
-    <link rel="icon" href="./src/bk.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="js/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Taylor Swift</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="./src/bk.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            background-color: powderblue;
-            background-image: url("./src/bg/p01.jpg");
-            color: black;
-        }
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: powderblue;
+      background-image: url("./src/bg/p01.jpg");
+      color: black;
+    }
 
-        
+    a {
+      font-size: 1em;
+    }
 
-        a {
-            font-size: 1em;
-        }
+    h2,
+    h4 {
+      color: navy;
+    }
 
-        h2,
-        h4 {
-            color: navy;
-        }
+    label {
+      display: inline-block;
+      width: 10em;
+      text-align: right;
+    }
 
-        label {
-            display: inline-block;
-            width: 10em;
-            text-align: right;
-        }
+    .tab-pane {
+      background-color: rgb(256, 265, 265, 0.6);
+      padding: 1em;
+      border-radius: 25px;
+    }
 
-        .tab-pane {
-            background-color: rgb(256, 265, 265, 0.6);
-            padding: 1em;
-            border-radius: 25px;
-        }
-         h1 {
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-            padding-left: 1em;
-}
-        .my-module{
-            position: relative;
-    top: 13em;
-        }
-    </style>
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      padding-left: 1em;
+    }
+
+    .my-module {
+      position: relative;
+      top: 13em;
+    }
+  </style>
 </head>
 
 <body>
 
-    <ul class="breadcrumb" style="margin-bottom: 0">
-        <li><a href="./artists.html">Home</a></li>
-        <li>Taylor Swift</li>
-    </ul>
+  <ul class="breadcrumb" style="margin-bottom: 0">
+    <li><a href="./artists.html">Home</a></li>
+    <li>Taylor Swift</li>
+  </ul>
 
-    <h1>Taylor Swift</h1>
+  <h1>Taylor Swift</h1>
+
+  <div>
+
+    <div class="container">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="v-pills-0-tab" data-toggle="pill" href="#v-pills-0" role="tab" aria-controls="v-pills-0" aria-selected="true">Profile</a>
+        </li>
+        <li class="nav-item disabled"><a class="nav-link">Albums: </a></li>
+        <li class="nav-item">
+          <a class="nav-link" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false">Fearless</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Speak Now</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Red</a>
+        </li>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-info" data-toggle="popover" data-trigger="hover" title="Subscribe to artist" data-content="One month free spotify subscription included." data-placement="bottom"> Support Artist <span class="badge badge-dark">5</span></button>
+          <button type="button" class="btn btn-success" onclick="window.location.href='./artists.html'" data-toggle="tooltip" data-placement="bottom" title="Back to home page">Go Back</button> </div>
+      </ul>
+
+      <br>
+
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0-tab">
+
+          <!-- data from external source -->
+          <dl>
+            <dt>Name</dt>
+            <dd itemprop="name">Taylor Swift</dd>
+          </dl>
+          <dl>
+            <dt>Birth Date</dt>
+            <dd itemprop="birthDate">December 13, 1989 (age 30)</dd>
+          </dl>
+
+          <p>
 
 
-    <div >
-                
-        <div class="container">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="v-pills-0-tab" data-toggle="pill" href="#v-pills-0" role="tab" aria-controls="v-pills-0" aria-selected="true">Profile</a>
-  </li>
-            <li class="nav-item disabled"><a class="nav-link" >Albums: </a></li>
-  <li class="nav-item">
-    <a class="nav-link" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false">Fearless</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Speak Now</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Red</a>
-  </li>
-            <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-info" data-toggle="popover" data-trigger="hover" title="Subscribe to artist" data-content="One month free spotify subscription included." data-placement="bottom"> Support Artist <span class="badge badge-dark">5</span></button>
-                <button type="button" class="btn btn-success"  onclick="window.location.href='./artists.html'" data-toggle="tooltip" data-placement="bottom" title="Back to home page">Go Back</button>    </div>
-</ul>
+            <a class="btn btn-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Read more...
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <dl>
+                <dt>Did You Know?</dt>
+                <dd>Contrary to the norm, 13 is Taylor Swift's lucky number. Not only was she born on the 13th, but her first album also went gold after 13 weeks and her first No. 1 song had a 13-second intro.</dd>
+                <dt>Did You Know?</dt>
+                <dd>During the 2010 Grammy Awards, Taylor Swift became the youngest artist in history to win Album of the Year for her sophomore album <i>Fearless</i>.</dd>
+                <dt>Did You Know?</dt>
+                <dd>For her albums Speak Now and Red, Taylor Swift became the first woman to sell more than one million copies of two albums in their opening week.</dd>
+              </dl>
+              <dl>
+                <dt>Education</dt>
+                <dd itemprop="alumniOf">Hendersonville High School</dd>
+              </dl>
+              <dl>
+                <dt>Place of Birth</dt>
+                <dd>Reading, Pennsylvania</dd>
+              </dl>
+              <dl>
+                <dt>AKA</dt>
+                <dd itemprop="additionalName">Taylor Swift</dd>
+                <dt>Full Name</dt>
+                <dd itemprop="additionalName">Taylor Alison Swift</dd>
+              </dl>
+              <dl>
+                <dt>Zodiac Sign</dt>
+                <dd>Sagittarius</dd>
+              </dl>
+            </div>
+          </div>
 
-                <br>
-                
-                
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0-tab">
 
-                        <!-- data from external source -->
-                        <dl>
-                            <dt>Name</dt>
-                            <dd itemprop="name">Taylor Swift</dd>
-                        </dl>
-                        <dl>
-                            <dt>Birth Date</dt>
-                            <dd itemprop="birthDate">December 13, 1989 (age 30)</dd>
-                        </dl>
-                        
-                        <p>
-                            
-                
-        <a class="btn btn-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" >
-            Read more...
-            </a> 
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            <dl>
-                            <dt>Did You Know?</dt>
-                            <dd>Contrary to the norm, 13 is Taylor Swift's lucky number. Not only was she born on the 13th, but her first album also went gold after 13 weeks and her first No. 1 song had a 13-second intro.</dd>
-                            <dt>Did You Know?</dt>
-                            <dd>During the 2010 Grammy Awards, Taylor Swift became the youngest artist in history to win Album of the Year for her sophomore album <i>Fearless</i>.</dd>
-                            <dt>Did You Know?</dt>
-                            <dd>For her albums Speak Now and Red, Taylor Swift became the first woman to sell more than one million copies of two albums in their opening week.</dd>
-                        </dl>
-                        <dl>
-                            <dt>Education</dt>
-                            <dd itemprop="alumniOf">Hendersonville High School</dd>
-                        </dl>
-                        <dl>
-                            <dt>Place of Birth</dt>
-                            <dd>Reading, Pennsylvania</dd>
-                        </dl>
-                        <dl>
-                            <dt>AKA</dt>
-                            <dd itemprop="additionalName">Taylor Swift</dd>
-                            <dt>Full Name</dt>
-                            <dd itemprop="additionalName">Taylor Alison Swift</dd>
-                        </dl>
-                        <dl>
-                            <dt>Zodiac Sign</dt>
-                            <dd>Sagittarius</dd>
-                        </dl>
+
+
         </div>
-    </div>
-                        
-                        
-                        
+        <div class="tab-pane fade" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
 
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
 
-                        
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fearlessmodal">
-  View Album Info <span class = "label label-info">Fearless</span>
-</button><br><br>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fearlessmodal">
+            View Album Info <span class="label label-info">Fearless</span>
+          </button><br><br>
 
-<!-- Modal -->
-<div class="modal fade" id="fearlessmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered my-module" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">Fearless (2008) - Taylor Swift</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Fearless is the second studio album by American singer-songwriter Taylor Swift. The album was released on November 11, 2008, by Big Machine Records. Swift wrote most of the songs during the time when she was promoting her self-titled debut studio album performing as an opening act for other country artists.</p>
-          
-          <img src="./src/fearless.jpg">
+          <!-- Modal -->
+          <div class="modal fade" id="fearlessmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered my-module" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLongTitle">Fearless (2008) - Taylor Swift</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Fearless is the second studio album by American singer-songwriter Taylor Swift. The album was released on November 11, 2008, by Big Machine Records. Swift wrote most of the songs during the time when she was promoting her self-titled debut studio album performing as an opening act for other country artists.</p>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>      
-                        
-                        
-                        
-                        <table class="table table-dark table-hover table-striped" style="opacity:0.9;">
-                            
-<thead>
-  <tr>
-    <th>Fearless</th>
-    <th>4:02</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Fifteen</td>
-    <td>4:55</td>
-  </tr>
-  <tr>
-    <td>Love Story</td>
-    <td>3:56</td>
-  </tr>
-  <tr>
-    <td>Hey Stephen</td>
-    <td>4:16</td>
-  </tr>
-  <tr>
-    <td>White Horse</td>
-    <td>3:55</td>
-  </tr>
-  <tr>
-    <td>You Belong With Me</td>
-    <td>3:52</td>
-  </tr>
-  <tr>
-    <td>Breathe</td>
-    <td>4:24</td>
-  </tr>
-  <tr>
-    <td>Tell Me Why</td>
-    <td>3:21</td>
-  </tr>
-  <tr>
-    <td>You're Not Sorry</td>
-    <td>4:22</td>
-  </tr>
-  <tr>
-    <td>The Way I Loved You</td>
-    <td>4:05</td>
-  </tr>
-  <tr>
-    <td>Forever &amp; Always</td>
-    <td>3:46</td>
-  </tr>
-  <tr>
-    <td>The Best Day</td>
-    <td>4:06</td>
-  </tr>
-  <tr>
-    <td>Change</td>
-    <td>4:40</td>
-  </tr>
-  <tr>
-    <td>Love Story</td>
-    <td>3:55</td>
-  </tr>
-  <tr>
-    <td>Change</td>
-    <td>4:37</td>
-  </tr>
-</tbody>
-</table>
-<ul class="pagination pagination-lg">
-        <li><a href="#">⤎</a></li>
-        <li class="active"><a href="#">Album 1</a></li>
-        <li ><a href="#">Album 2</a></li>
-        <li><a href="#">Album 3</a></li>
-        <li><a href="#">⤏</a></li>
-    </ul>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                  <img src="./src/fearless.jpg">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <table class="table table-dark table-hover table-striped" style="opacity:0.9;">
+
+            <thead>
+              <tr>
+                <th>Fearless</th>
+                <th>4:02</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fifteen</td>
+                <td>4:55</td>
+              </tr>
+              <tr>
+                <td>Love Story</td>
+                <td>3:56</td>
+              </tr>
+              <tr>
+                <td>Hey Stephen</td>
+                <td>4:16</td>
+              </tr>
+              <tr>
+                <td>White Horse</td>
+                <td>3:55</td>
+              </tr>
+              <tr>
+                <td>You Belong With Me</td>
+                <td>3:52</td>
+              </tr>
+              <tr>
+                <td>Breathe</td>
+                <td>4:24</td>
+              </tr>
+              <tr>
+                <td>Tell Me Why</td>
+                <td>3:21</td>
+              </tr>
+              <tr>
+                <td>You're Not Sorry</td>
+                <td>4:22</td>
+              </tr>
+              <tr>
+                <td>The Way I Loved You</td>
+                <td>4:05</td>
+              </tr>
+              <tr>
+                <td>Forever &amp; Always</td>
+                <td>3:46</td>
+              </tr>
+              <tr>
+                <td>The Best Day</td>
+                <td>4:06</td>
+              </tr>
+              <tr>
+                <td>Change</td>
+                <td>4:40</td>
+              </tr>
+              <tr>
+                <td>Love Story</td>
+                <td>3:55</td>
+              </tr>
+              <tr>
+                <td>Change</td>
+                <td>4:37</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination pagination-lg">
+            <li><a href="#">⤎</a></li>
+            <li class="active"><a href="#">Album 1</a></li>
+            <li><a href="#">Album 2</a></li>
+            <li><a href="#">Album 3</a></li>
+            <li><a href="#">⤏</a></li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
 
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#speaknowmodal">
-  View Album Info <span class = "label label-info">Speak Now</span>
-</button><br><br>
+            View Album Info <span class="label label-info">Speak Now</span>
+          </button><br><br>
 
-<!-- Modal -->
-<div class="modal fade" id="speaknowmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered my-module" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">Speak Now (2010) - Taylor Swift</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Speak Now is the third studio album by American singer-songwriter Taylor Swift. It was released on October 25, 2010, by Big Machine Records. Production for the album took place during 2009 to 2010 at several recording studios, and was handled by Swift and Nathan Chapman.</p>
-          
-          <img src="./src/speaknow.png">
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>                   
-                        
-                        
-<table class="table table-dark table-hover table-striped" style="opacity:0.9;">
-<thead>
-  <tr>
-    <th>Mine</th>
-    <th>3:51</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Sparks Fly</td>
-    <td>4:22</td>
-  </tr>
-  <tr>
-    <td>Back To December</td>
-    <td>4:55</td>
-  </tr>
-  <tr>
-    <td>Speak Now</td>
-    <td>4:03</td>
-  </tr>
-  <tr>
-    <td>Dear John</td>
-    <td>6:45</td>
-  </tr>
-  <tr>
-    <td>Mean</td>
-    <td>3:58</td>
-  </tr>
-  <tr>
-    <td>The Story Of Us</td>
-    <td>4:27</td>
-  </tr>
-  <tr>
-    <td>Never Grow Up</td>
-    <td>4:52</td>
-  </tr>
-  <tr>
-    <td>Enchanted</td>
-    <td>5:53</td>
-  </tr>
-  <tr>
-    <td>Better Than Revenge</td>
-    <td>3:40</td>
-  </tr>
-  <tr>
-    <td>Innocent</td>
-    <td>5:03</td>
-  </tr>
-  <tr>
-    <td>Haunted</td>
-    <td>4:05</td>
-  </tr>
-  <tr>
-    <td>Last Kiss</td>
-    <td>6:09</td>
-  </tr>
-  <tr>
-    <td>Long Live</td>
-    <td>5:17</td>
-  </tr>
-  <tr>
-    <td>Change</td>
-    <td>4:37</td>
-  </tr>
-</tbody>
-</table>
-<ul class="pagination pagination-lg">
-        <li><a href="#">⤎</a></li>
-        <li><a href="#">Album 1</a></li>
-        <li class="active"><a href="#">Album 2</a></li>
-        <li><a href="#">Album 3</a></li>
-        <li><a href="#">⤏</a></li>
-    </ul>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-
-                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#redmodal">
-  View Album Info <span class = "label label-info">Red</span>
-</button><br><br>
-
-<!-- Modal -->
-<div class="modal fade" id="redmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered my-module" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">Red (2012) - Taylor Swift</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Red is the fourth studio album by American singer-songwriter Taylor Swift. It was released on October 22, 2012, by Big Machine Records. Inspired by past romantic relationships evoking intense, tumultuous "red" emotions that Swift was experiencing during the conception of the project, Red touches on the themes of romance and heartbreak.</p>
-          
-          <img src="./src/red.png">
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>       
-                        
-<table class="table table-dark table-hover table-striped" style="opacity:0.9;">
-    
-<thead>
-  <tr>
-    <th>State Of Grace</th>
-    <th>4:56</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Red</td>
-    <td>3:41</td>
-  </tr>
-  <tr>
-    <td>Treacherous</td>
-    <td>4:01</td>
-  </tr>
-  <tr>
-    <td>I Knew You Were Trouble.</td>
-    <td>3:38</td>
-  </tr>
-  <tr>
-    <td>All Too Well</td>
-    <td>5:28</td>
-  </tr>
-  <tr>
-    <td>22</td>
-    <td>3:51</td>
-  </tr>
-  <tr>
-    <td>I Almost Do</td>
-    <td>4:03</td>
-  </tr>
-  <tr>
-    <td>We Are Never Ever Getting Back Together</td>
-    <td>3:11</td>
-  </tr>
-  <tr>
-    <td>Stay Stay Stay</td>
-    <td>3:25</td>
-  </tr>
-  <tr>
-    <td>The Last Time</td>
-    <td>4:58</td>
-  </tr>
-  <tr>
-    <td>Holy Ground</td>
-    <td>3:22</td>
-  </tr>
-  <tr>
-    <td>Sad Beautiful Tragic</td>
-    <td>4:44</td>
-  </tr>
-  <tr>
-    <td>The Lucky One</td>
-    <td>4:01</td>
-  </tr>
-  <tr>
-    <td>Everything Has Changed</td>
-    <td>4:04</td>
-  </tr>
-  <tr>
-    <td>Starlight</td>
-    <td>3:38</td>
-  </tr>
-  <tr>
-    <td>Begin Again</td>
-    <td>3:58</td>
-  </tr>
-</tbody>
-</table>
-<ul class="pagination pagination-lg">
-        <li><a href="#">⤎</a></li>
-        <li><a href="#">Album 1</a></li>
-        <li ><a href="#">Album 2</a></li>
-        <li class="active"><a href="#">Album 3</a></li>
-        <li><a href="#">⤏</a></li>
-    </ul>
-                    </div>
+          <!-- Modal -->
+          <div class="modal fade" id="speaknowmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered my-module" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLongTitle">Speak Now (2010) - Taylor Swift</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-            
-        </div>
-        
-        <br>
-        <center>
-        <div class="alert alert-warning alert-dismissible fade show w-50 " role="alert">
-  
-  <strong>Please</strong> concider <a href="#" class="alert-link">subscribing</a> to the channel to support your favourite artists.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">Close &times;</span>
-  </button>
-</div></center>
-        
-    </div>
- <script>
-$(document).ready(function(){
-$('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
+                <div class="modal-body">
+                  <p>Speak Now is the third studio album by American singer-songwriter Taylor Swift. It was released on October 25, 2010, by Big Machine Records. Production for the album took place during 2009 to 2010 at several recording studios, and was handled by Swift and Nathan Chapman.</p>
 
-</body></html>
+                  <img src="./src/speaknow.png">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <table class="table table-dark table-hover table-striped" style="opacity:0.9;">
+            <thead>
+              <tr>
+                <th>Mine</th>
+                <th>3:51</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sparks Fly</td>
+                <td>4:22</td>
+              </tr>
+              <tr>
+                <td>Back To December</td>
+                <td>4:55</td>
+              </tr>
+              <tr>
+                <td>Speak Now</td>
+                <td>4:03</td>
+              </tr>
+              <tr>
+                <td>Dear John</td>
+                <td>6:45</td>
+              </tr>
+              <tr>
+                <td>Mean</td>
+                <td>3:58</td>
+              </tr>
+              <tr>
+                <td>The Story Of Us</td>
+                <td>4:27</td>
+              </tr>
+              <tr>
+                <td>Never Grow Up</td>
+                <td>4:52</td>
+              </tr>
+              <tr>
+                <td>Enchanted</td>
+                <td>5:53</td>
+              </tr>
+              <tr>
+                <td>Better Than Revenge</td>
+                <td>3:40</td>
+              </tr>
+              <tr>
+                <td>Innocent</td>
+                <td>5:03</td>
+              </tr>
+              <tr>
+                <td>Haunted</td>
+                <td>4:05</td>
+              </tr>
+              <tr>
+                <td>Last Kiss</td>
+                <td>6:09</td>
+              </tr>
+              <tr>
+                <td>Long Live</td>
+                <td>5:17</td>
+              </tr>
+              <tr>
+                <td>Change</td>
+                <td>4:37</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination pagination-lg">
+            <li><a href="#">⤎</a></li>
+            <li><a href="#">Album 1</a></li>
+            <li class="active"><a href="#">Album 2</a></li>
+            <li><a href="#">Album 3</a></li>
+            <li><a href="#">⤏</a></li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#redmodal">
+            View Album Info <span class="label label-info">Red</span>
+          </button><br><br>
+
+          <!-- Modal -->
+          <div class="modal fade" id="redmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered my-module" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLongTitle">Red (2012) - Taylor Swift</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Red is the fourth studio album by American singer-songwriter Taylor Swift. It was released on October 22, 2012, by Big Machine Records. Inspired by past romantic relationships evoking intense, tumultuous "red" emotions that Swift was experiencing during the conception of the project, Red touches on the themes of romance and heartbreak.</p>
+
+                  <img src="./src/red.png">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <table class="table table-dark table-hover table-striped" style="opacity:0.9;">
+
+            <thead>
+              <tr>
+                <th>State Of Grace</th>
+                <th>4:56</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Red</td>
+                <td>3:41</td>
+              </tr>
+              <tr>
+                <td>Treacherous</td>
+                <td>4:01</td>
+              </tr>
+              <tr>
+                <td>I Knew You Were Trouble.</td>
+                <td>3:38</td>
+              </tr>
+              <tr>
+                <td>All Too Well</td>
+                <td>5:28</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>3:51</td>
+              </tr>
+              <tr>
+                <td>I Almost Do</td>
+                <td>4:03</td>
+              </tr>
+              <tr>
+                <td>We Are Never Ever Getting Back Together</td>
+                <td>3:11</td>
+              </tr>
+              <tr>
+                <td>Stay Stay Stay</td>
+                <td>3:25</td>
+              </tr>
+              <tr>
+                <td>The Last Time</td>
+                <td>4:58</td>
+              </tr>
+              <tr>
+                <td>Holy Ground</td>
+                <td>3:22</td>
+              </tr>
+              <tr>
+                <td>Sad Beautiful Tragic</td>
+                <td>4:44</td>
+              </tr>
+              <tr>
+                <td>The Lucky One</td>
+                <td>4:01</td>
+              </tr>
+              <tr>
+                <td>Everything Has Changed</td>
+                <td>4:04</td>
+              </tr>
+              <tr>
+                <td>Starlight</td>
+                <td>3:38</td>
+              </tr>
+              <tr>
+                <td>Begin Again</td>
+                <td>3:58</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination pagination-lg">
+            <li><a href="#">⤎</a></li>
+            <li><a href="#">Album 1</a></li>
+            <li><a href="#">Album 2</a></li>
+            <li class="active"><a href="#">Album 3</a></li>
+            <li><a href="#">⤏</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <center>
+      <div class="alert alert-warning alert-dismissible fade show w-50 " role="alert">
+
+        <strong>Please</strong> concider <a href="#" class="alert-link">subscribing</a> to the channel to support your favourite artists.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">Close &times;</span>
+        </button>
+      </div>
+    </center>
+
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+</body>
+
+</html>

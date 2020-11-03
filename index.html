@@ -1,439 +1,486 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Music Management System</title>
   <meta charset="utf-8">
-    <link rel="icon" href="./src/bk.ico">
+  <link rel="icon" href="./src/bk.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="js/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-     html * {
-           
-      }
-  body {
-    position: relative; 
-  }
-  .affix {
-    top:0;
-    width: 100%;
-    z-index: 9999 !important;
-  }
-  .navbar {
-    margin-bottom: 0px;
-  }
+    html * {}
 
-  .affix ~ .container-fluid {
-   position: relative;
-   top: 50px;
-  }
-     .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-         background-color: azure;
-           transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
-      p{color: black;}
+    body {
+      position: relative;
+    }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-} 
-      .card {
-          padding: 2px 5px;
-          margin-bottom: 5px;
-      }
-      
-    #section1,#section2,#section3,#section41,#section42{
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+    .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
     }
-    
-#section1 {padding-top:5px;min-height:500px;color: #fff; background-image: url('./src/login/bg1.jpg');}
-  #section2 {padding-top:5px;min-height:500px;color: #fff; background-image: url('./src/login/bg2.jpg'); }
-  #section3 {padding-top:5px;min-height:500px;color: #fff; background-image: url('./src/login/bg3.jpg'); }
-  #section41 {padding-top:5px;min-height:300px;color: #fff; background-image: url('./src/login/bg1.jpg'); }
-  #section42 {padding-top:5px;min-height:500px;color: #fff; background-image: url('./src/login/bg2.jpg'); }
-    
-    #section1::before{
-      
+
+    .navbar {
+      margin-bottom: 0px;
     }
+
+    .affix~.container-fluid {
+      position: relative;
+      top: 50px;
+    }
+
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      background-color: azure;
+      transition: 0.3s;
+      border-radius: 5px;
+      /* 5px rounded corners */
+    }
+
+    p {
+      color: black;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      padding: 2px 5px;
+      margin-bottom: 5px;
+    }
+
+    #section1,
+    #section2,
+    #section3,
+    #section41,
+    #section42 {
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .1);
+    }
+
+    #section1 {
+      padding-top: 5px;
+      min-height: 500px;
+      color: #fff;
+      background-image: url('./src/login/bg1.jpg');
+    }
+
+    #section2 {
+      padding-top: 5px;
+      min-height: 500px;
+      color: #fff;
+      background-image: url('./src/login/bg2.jpg');
+    }
+
+    #section3 {
+      padding-top: 5px;
+      min-height: 500px;
+      color: #fff;
+      background-image: url('./src/login/bg3.jpg');
+    }
+
+    #section41 {
+      padding-top: 5px;
+      min-height: 300px;
+      color: #fff;
+      background-image: url('./src/login/bg1.jpg');
+    }
+
+    #section42 {
+      padding-top: 5px;
+      min-height: 500px;
+      color: #fff;
+      background-image: url('./src/login/bg2.jpg');
+    }
+
+    #section1::before {}
   </style>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<div class="container-fluid" style="background-image: url('./src/banner.jpg');height:250px;">
-  
-</div>
+  <div class="container-fluid" style="background-image: url('./src/banner.jpg');height:250px;">
 
-<nav class="navbar navbar-inverse navbar-expand-md" data-spy="affix" data-offset-top="250">
-  <div class="container-fluid">
-    <div class="navbar-header">
+  </div>
+
+  <nav class="navbar navbar-inverse navbar-expand-md" data-spy="affix" data-offset-top="250">
+    <div class="container-fluid">
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Waves Music Management System</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-               
-          <li class="nav-item"><a href="#section1">Top Artists</a></li>
-          <li class="nav-item"><a href="#section2">Top Albums</a></li>
-          <li class="nav-item"><a href="#section3">Latest Releases</a></li>
-          <li class="nav-item dropdown">
-              <a class="dropdown" data-toggle="dropdown" href="#">Support Page <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#section41">Subscribe</a></li>
-              <li><a href="#section42">Donate</a></li>
-            </ul>
-          </li>
-          
-            <li class="nav-item bg-light"><a href="./subscribe.html">Subscribe</a></li>
-               <li class="nav-item bg-secondary"><a href="./login.html">Login</a></li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>    
-
-<div id="section1" class="container-fluid">
-      <center>
-    <div class="alert alert-danger alert-dismissible fade show w-50 " role="alert">
-  This site uses 
-  <strong>Cookies</strong> .
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">Acknowledge<span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
-  </button>
-</div></center>
-    
-  <h1>Top Artists of the week</h1>
-  <center><a href="./artists.html"><img src="./src/bg/artist.png" class="img-thumbnail rounded" alt="lpu img" style="max-width:900px"></a></center>
-
-</div>
-<div id="section2" class="container-fluid">
-  <h1>Top Albums of the week</h1>
-  <div class="container" style="max-width: 920px">
-    
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-      
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="./src/bg/alb1.png" alt="img missing">
-    </div>
-    <div class="item">
-      <img src="./src/bg/alb2.png" alt="img missing">
-    </div>
-    <div class="item">
-      <img src="./src/bg/alb3.png" alt="img missing">
-    </div>
-       <div class="item">
-      <img src="./src/bg/alb4.png" alt="img missing">
-    </div>
-       <div class="item">
-      <img src="./src/bg/alb5.png" alt="img missing">
-    </div>
-      
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
- 
-    </div>
-</div>
-<div id="section3" class="container-fluid">
-  <h1>Latest Releases</h1>
-  
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            What happened this week?
+          <span class="icon-bar"></span>
         </button>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body" style="padding: 15px">
-            <p>This week’s longlist of #NewMusicFriday single and album releases appears at the bottom of the page, but first, a few highlights…</p><p>
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Waves Music Management System</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
 
-The Vamps return refreshed, re-energised and full re-booted on their new album, titled Cherry Blossom. Co-written by the band with producers Jack & Coke (Rita Ora, Charli XCX), Lostboy (Zedd, Dua Lipa) and JHart (Camila Cabello, The Script), if you’ve heard any of the three trailer songs – Married In Vegas, Chemicals, Better – rest assured the remainder of the album is just as bright, breezy and ludicrously catchy. Read our interview with Brad and James about the album here.</p><p>
+            <li class="nav-item"><a href="#section1">Top Artists</a></li>
+            <li class="nav-item"><a href="#section2">Top Albums</a></li>
+            <li class="nav-item"><a href="#section3">Latest Releases</a></li>
+            <li class="nav-item dropdown">
+              <a class="dropdown" data-toggle="dropdown" href="#">Support Page <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#section41">Subscribe</a></li>
+                <li><a href="#section42">Donate</a></li>
+              </ul>
+            </li>
 
-London born singer-songwriter Beabadoobee completes her journey from bedroom-pop artist to bubblegrunge hero with the release of her debut album Fake It Flowers. Strongly recommended for those feeling particularly - rightfully - angsty right now.</p><p>
-    Norwegian artist Astrid S releases her long-awaited debut, Leave It Beautiful. At ten tracks and clocking in at 27 minutes, it’s a slick, all-killer synthpop affair.
-</p><p>
-Justin Bieber has teamed up with Benny Blanco on Lonely, the second offering from his upcoming album. Billie Eilish’s brother and producer Finneas also worked on the song, which is essentially a reflection on what it's like being one of the most famous people on the planet.
-</p><p>
-Kelly Rowland is the latest artist to dust off her sequins and hop on the disco bandwagon with her new track Crazy. Rather than the full-throttle, Euro-pop banger Kelly you might remember from a few years ago, Crazy successfully blends dance with classic funk grooves.
-    </p>  
+            <li class="nav-item bg-light"><a href="./subscribe.html">Subscribe</a></li>
+            <li class="nav-item bg-secondary"><a href="./login.html">Login</a></li>
+
+          </ul>
         </div>
+      </div>
     </div>
-    
+  </nav>
+
+  <div id="section1" class="container-fluid">
+    <center>
+      <div class="alert alert-danger alert-dismissible fade show w-50 " role="alert">
+        This site uses
+        <strong>Cookies</strong> .
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">Acknowledge<span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+        </button>
+      </div>
+    </center>
+
+    <h1>Top Artists of the week</h1>
+    <center><a href="./artists.html"><img src="./src/bg/artist.png" class="img-thumbnail rounded" alt="lpu img" style="max-width:900px"></a></center>
+
+  </div>
+  <div id="section2" class="container-fluid">
+    <h1>Top Albums of the week</h1>
+    <div class="container" style="max-width: 920px">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="./src/bg/alb1.png" alt="img missing">
+          </div>
+          <div class="item">
+            <img src="./src/bg/alb2.png" alt="img missing">
+          </div>
+          <div class="item">
+            <img src="./src/bg/alb3.png" alt="img missing">
+          </div>
+          <div class="item">
+            <img src="./src/bg/alb4.png" alt="img missing">
+          </div>
+          <div class="item">
+            <img src="./src/bg/alb5.png" alt="img missing">
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div id="section3" class="container-fluid">
+    <h1>Latest Releases</h1>
+
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      What happened this week?
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" style="padding: 15px">
+        <p>This week’s longlist of #NewMusicFriday single and album releases appears at the bottom of the page, but first, a few highlights…</p>
+        <p>
+
+          The Vamps return refreshed, re-energised and full re-booted on their new album, titled Cherry Blossom. Co-written by the band with producers Jack & Coke (Rita Ora, Charli XCX), Lostboy (Zedd, Dua Lipa) and JHart (Camila Cabello, The Script), if you’ve heard any of the three trailer songs – Married In Vegas, Chemicals, Better – rest assured the remainder of the album is just as bright, breezy and ludicrously catchy. Read our interview with Brad and James about the album here.</p>
+        <p>
+
+          London born singer-songwriter Beabadoobee completes her journey from bedroom-pop artist to bubblegrunge hero with the release of her debut album Fake It Flowers. Strongly recommended for those feeling particularly - rightfully - angsty right now.</p>
+        <p>
+          Norwegian artist Astrid S releases her long-awaited debut, Leave It Beautiful. At ten tracks and clocking in at 27 minutes, it’s a slick, all-killer synthpop affair.
+        </p>
+        <p>
+          Justin Bieber has teamed up with Benny Blanco on Lonely, the second offering from his upcoming album. Billie Eilish’s brother and producer Finneas also worked on the song, which is essentially a reflection on what it's like being one of the most famous people on the planet.
+        </p>
+        <p>
+          Kelly Rowland is the latest artist to dust off her sequins and hop on the disco bandwagon with her new track Crazy. Rather than the full-throttle, Euro-pop banger Kelly you might remember from a few years ago, Crazy successfully blends dance with classic funk grooves.
+        </p>
+      </div>
+    </div>
+
     <div></div>
-    
-  <div class="col-sm-6 col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <img src="./src/bg/rel1.png" style="width: 100%;
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="./src/bg/rel1.png" style="width: 100%;
   height: auto;">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-sm-6 col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <img src="./src/bg/rel2.png" style="width: 100%;
+    <div class="col-sm-6 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="./src/bg/rel2.png" style="width: 100%;
   height: auto;">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-sm-6 col-lg-4 ">
-    <div class="card">
-      <div class="card-body">
-        <img src="./src/bg/rel3.png" style="width: 100%;
+    <div class="col-sm-6 col-lg-4 ">
+      <div class="card">
+        <div class="card-body">
+          <img src="./src/bg/rel3.png" style="width: 100%;
   height: auto;">
+        </div>
       </div>
     </div>
-  </div>
-<div class="col-sm-6 col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <img src="./src/bg/rel4.png" style="width: 100%;
+    <div class="col-sm-6 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="./src/bg/rel4.png" style="width: 100%;
   height: auto;">
+        </div>
       </div>
     </div>
-  </div>
-       <div class="col-sm-6 col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <img src="./src/bg/rel5.png" style="width: 100%;
+    <div class="col-sm-6 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="./src/bg/rel5.png" style="width: 100%;
   height: auto;">
+        </div>
       </div>
     </div>
-  </div>
-       <div class="col-sm-6 col-lg-4">
-    <div class="card">
-      <div class="card-body">
-        <img src="./src/bg/rel6.png" style="width: 100%;
+    <div class="col-sm-6 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="./src/bg/rel6.png" style="width: 100%;
   height: auto;">
+        </div>
       </div>
     </div>
+
   </div>
-    
-</div>
-<div id="section41" class="container-fluid">
-  <h1>Subscribe to the website</h1>
+  <div id="section41" class="container-fluid">
+    <h1>Subscribe to the website</h1>
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Sign Up / Login
-</button><br><br>
-<p>Sign up to access more features and attractive offeres from us!</p>
-    
+      Sign Up / Login
+    </button><br><br>
+    <p>Sign up to access more features and attractive offeres from us!</p>
+
     <h2>Because our relationship with our audience is very important to us, we always make it a point to keep you updated in the latest news and offerings.</h2>
-    
-<!-- Modal -->
-<div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered " role="document">
-    <div class="modal-content bg-dark">
-      
-      <div class="modal-body">
-         <h1 class="modal-title" id="exampleModalLongTitle">Sign in or Create account</h1>
-          <p>Sign in to organize and share your favourite items and shops</p>
-          
-          <button type="button" class="btn btn-primary w-75" data-dismiss="modal"><i class="fa fa-facebook-square" style="font-size:24px"></i> Continue with Facebook</button> <br>
-          <button type="button" class="btn btn-danger w-75" data-dismiss="modal"><i class="fa fa-google-plus" style="font-size:24px"></i> Continue with Google</button>
-          
-          <br><br>
-          <p>We'll never post without your permission</p>
-          
-          <h5>OR</h5>
-          
-          <form>
-          <label>Enter your email:</label> <br>
-              <input type="text"> <br><br>
-               <button type="button" class="btn btn-info w-75" data-dismiss="modal">Continue</button>
-          </form>
-          Have and account? <a href=#> Sign in</a>
 
-      </div>
-      
-    </div>
-  </div>
-</div>
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content bg-dark">
 
-    
-</div>
-<div id="section42" class="container-fluid">
-  
-    
-   <h2>Donate to us.</h2>
+          <div class="modal-body">
+            <h1 class="modal-title" id="exampleModalLongTitle">Sign in or Create account</h1>
+            <p>Sign in to organize and share your favourite items and shops</p>
+
+            <button type="button" class="btn btn-primary w-75" data-dismiss="modal"><i class="fa fa-facebook-square" style="font-size:24px"></i> Continue with Facebook</button> <br>
+            <button type="button" class="btn btn-danger w-75" data-dismiss="modal"><i class="fa fa-google-plus" style="font-size:24px"></i> Continue with Google</button>
+
+            <br><br>
+            <p>We'll never post without your permission</p>
+
+            <h5>OR</h5>
+
             <form>
-                <table class="table table-hover table-striped table-dark ">
-                    <tbody>
-                        <tr>
-                            <td><label for="fname">Name:</label></td>
-                            <td><input type="text" id="fname" name="fname" value=""></td>
-                        </tr>
-                        <tr>
-                            <td><label for="fname">Mobile No:</label></td>
-                            <td><input type="text" id="fname" name="fname" value=""></td>
-                        </tr>
+              <label>Enter your email:</label> <br>
+              <input type="text"> <br><br>
+              <button type="button" class="btn btn-info w-75" data-dismiss="modal">Continue</button>
+            </form>
+            Have and account? <a href=#> Sign in</a>
 
-                        <tr>
-                            <td><label for="fname">Business No:</label></td>
-                            <td><input type="text" id="fname" name="fname" value=""></td>
+          </div>
 
-                        <tr>
-                            <td><label for="fname">Email:</label></td>
-                            <td><input type="text" id="fname" name="fname" value=""></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="fname">Home Address:</label></td>
-                            <td><textarea rows="4" cols="40" placeholder="Address"></textarea></td>
-                        </tr>
-
-                        <tr>
-                            <td></td>
-                            <td><button type="button" class="btn btn-success">Proceed to Payment portal</button></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </form> 
-
-</div>
-    
-<footer class="page-footer font-small unique-color-dark" style="background-color: lightblue;">
-
-  <div style="background-color: #6351ce;">
-    <div class="container">
-
-      <div class="row py-4 d-flex align-items-center">
-
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
         </div>
-        <div class="col-md-6 col-lg-7 text-center text-md-right">
-          <a class="fb-ic">
-            <i class="fa fa-facebook-f white-text mr-4"> </i>
-          </a>
-          <a class="tw-ic">
-            <i class="fa fa-twitter white-text mr-4"> </i>
-          </a>
-          <a class="gplus-ic">
-            <i class="fa fa-google-plus white-text mr-4"> </i>
-          </a>
-          <a class="li-ic">
-            <i class="fa fa-linkedin white-text mr-4"> </i>
-          </a>
-          <a class="ins-ic">
-            <i class="fa fa-instagram white-text"> </i>
-          </a>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="section42" class="container-fluid">
+
+
+    <h2>Donate to us.</h2>
+    <form>
+      <table class="table table-hover table-striped table-dark ">
+        <tbody>
+          <tr>
+            <td><label for="fname">Name:</label></td>
+            <td><input type="text" id="fname" name="fname" value=""></td>
+          </tr>
+          <tr>
+            <td><label for="fname">Mobile No:</label></td>
+            <td><input type="text" id="fname" name="fname" value=""></td>
+          </tr>
+
+          <tr>
+            <td><label for="fname">Business No:</label></td>
+            <td><input type="text" id="fname" name="fname" value=""></td>
+
+          <tr>
+            <td><label for="fname">Email:</label></td>
+            <td><input type="text" id="fname" name="fname" value=""></td>
+          </tr>
+
+          <tr>
+            <td><label for="fname">Home Address:</label></td>
+            <td><textarea rows="4" cols="40" placeholder="Address"></textarea></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><button type="button" class="btn btn-success">Proceed to Payment portal</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </form>
+
+  </div>
+
+  <footer class="page-footer font-small unique-color-dark" style="background-color: lightblue;">
+
+    <div style="background-color: #6351ce;">
+      <div class="container">
+
+        <div class="row py-4 d-flex align-items-center">
+
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <a class="fb-ic">
+              <i class="fa fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <a class="tw-ic">
+              <i class="fa fa-twitter white-text mr-4"> </i>
+            </a>
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus white-text mr-4"> </i>
+            </a>
+            <a class="li-ic">
+              <i class="fa fa-linkedin white-text mr-4"> </i>
+            </a>
+            <a class="ins-ic">
+              <i class="fa fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <h6 class="text-uppercase font-weight-bold">Waves Music</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>We are a small organization developing music management system.</p>
+
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Music Sys</a>
+          </p>
+          <p>
+            <a href="#!">Artist Support</a>
+          </p>
+          <p>
+            <a href="#!">Down to Earth</a>
+          </p>
+          <p>
+            <a href="#!">Hotify</a>
+          </p>
+
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Subscribe</a>
+          </p>
+          <p>
+            <a href="#!">Reach out</a>
+          </p>
+
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i> Galle, Sri Lanka</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> music@wave.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> + 01 454 567 88</p>
+          <p>
+            <i class="fa fa-print mr-3"></i> + 01 787 567 89</p>
 
         </div>
 
       </div>
 
     </div>
-  </div>
 
-  <div class="container text-center text-md-left mt-5" >
-
-    <div class="row mt-3">
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-        <h6 class="text-uppercase font-weight-bold">Waves Music</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>We are a small organization developing music management system.</p>
-
-      </div>
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <h6 class="text-uppercase font-weight-bold">Products</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Music Sys</a>
-        </p>
-        <p>
-          <a href="#!">Artist Support</a>
-        </p>
-        <p>
-          <a href="#!">Down to Earth</a>
-        </p>
-        <p>
-          <a href="#!">Hotify</a>
-        </p>
-
-      </div>
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Your Account</a>
-        </p>
-        <p>
-          <a href="#!">Become an Affiliate</a>
-        </p>
-        <p>
-          <a href="#!">Subscribe</a>
-        </p>
-        <p>
-          <a href="#!">Reach out</a>
-        </p>
-
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <i class="fa fa-home mr-3"></i> Galle, Sri Lanka</p>
-        <p>
-          <i class="fa fa-envelope mr-3"></i> music@wave.com</p>
-        <p>
-          <i class="fa fa-phone mr-3"></i> + 01 454 567 88</p>
-        <p>
-          <i class="fa fa-print mr-3"></i> + 01 787 567 89</p>
-
-      </div>
-
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://github.com/banukaknight"> github.com/banukaknight</a>
     </div>
 
-  </div>
-
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://github.com/banukaknight"> github.com/banukaknight</a>
-  </div>
-
-</footer>
+  </footer>
   <script>
-$(document).ready(function(){
-$('[data-toggle="popover"]').popover();
-});
-</script>
-    
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
 </body>
+
 </html>
